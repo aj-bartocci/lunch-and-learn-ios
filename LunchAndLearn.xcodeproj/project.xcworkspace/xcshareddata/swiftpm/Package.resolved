@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftUIPreviewHelpers",
+        "repositoryURL": "https://github.com/aj-bartocci/SwiftUIPreviewHelpers",
+        "state": {
+          "branch": "main",
+          "revision": "a8707d56634f53dec65707944c26a9e7016ca554",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

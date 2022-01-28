@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		82077C2827A44B2800DBA57F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82077C2727A44B2800DBA57F /* AppDelegate.swift */; };
 		82077C2A27A44B2800DBA57F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82077C2927A44B2800DBA57F /* SceneDelegate.swift */; };
-		82077C2C27A44B2800DBA57F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82077C2B27A44B2800DBA57F /* ViewController.swift */; };
 		82077C2F27A44B2800DBA57F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82077C2D27A44B2800DBA57F /* Main.storyboard */; };
 		82077C3127A44B2A00DBA57F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82077C3027A44B2A00DBA57F /* Assets.xcassets */; };
 		82077C3427A44B2A00DBA57F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82077C3227A44B2A00DBA57F /* LaunchScreen.storyboard */; };
 		82077C3F27A44B2A00DBA57F /* LunchAndLearnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82077C3E27A44B2A00DBA57F /* LunchAndLearnTests.swift */; };
 		82077C4927A44B2A00DBA57F /* LunchAndLearnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82077C4827A44B2A00DBA57F /* LunchAndLearnUITests.swift */; };
 		82077C4B27A44B2A00DBA57F /* LunchAndLearnUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82077C4A27A44B2A00DBA57F /* LunchAndLearnUITestsLaunchTests.swift */; };
+		82077C5B27A44CA800DBA57F /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82077C5A27A44CA800DBA57F /* CounterViewController.swift */; };
+		82077C5E27A44D3000DBA57F /* SwiftUIPreviewHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = 82077C5D27A44D3000DBA57F /* SwiftUIPreviewHelpers */; };
+		82077C6027A44F1C00DBA57F /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82077C5F27A44F1C00DBA57F /* CounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 		82077C2427A44B2800DBA57F /* LunchAndLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunchAndLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82077C2727A44B2800DBA57F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82077C2927A44B2800DBA57F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		82077C2B27A44B2800DBA57F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		82077C2E27A44B2800DBA57F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82077C3027A44B2A00DBA57F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82077C3327A44B2A00DBA57F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,8 @@
 		82077C4427A44B2A00DBA57F /* LunchAndLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LunchAndLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82077C4827A44B2A00DBA57F /* LunchAndLearnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchAndLearnUITests.swift; sourceTree = "<group>"; };
 		82077C4A27A44B2A00DBA57F /* LunchAndLearnUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchAndLearnUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		82077C5A27A44CA800DBA57F /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
+		82077C5F27A44F1C00DBA57F /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82077C5E27A44D3000DBA57F /* SwiftUIPreviewHelpers in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +103,10 @@
 		82077C2627A44B2800DBA57F /* LunchAndLearn */ = {
 			isa = PBXGroup;
 			children = (
+				82077C5827A44C8200DBA57F /* SwiftUI */,
+				82077C5727A44C7A00DBA57F /* Storyboard */,
 				82077C2727A44B2800DBA57F /* AppDelegate.swift */,
 				82077C2927A44B2800DBA57F /* SceneDelegate.swift */,
-				82077C2B27A44B2800DBA57F /* ViewController.swift */,
 				82077C2D27A44B2800DBA57F /* Main.storyboard */,
 				82077C3027A44B2A00DBA57F /* Assets.xcassets */,
 				82077C3227A44B2A00DBA57F /* LaunchScreen.storyboard */,
@@ -127,6 +132,38 @@
 			path = LunchAndLearnUITests;
 			sourceTree = "<group>";
 		};
+		82077C5727A44C7A00DBA57F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				82077C5927A44C8A00DBA57F /* CounterDemo */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		82077C5827A44C8200DBA57F /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				82077C6127A450A600DBA57F /* CounterDemo */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		82077C5927A44C8A00DBA57F /* CounterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				82077C5A27A44CA800DBA57F /* CounterViewController.swift */,
+			);
+			path = CounterDemo;
+			sourceTree = "<group>";
+		};
+		82077C6127A450A600DBA57F /* CounterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				82077C5F27A44F1C00DBA57F /* CounterView.swift */,
+			);
+			path = CounterDemo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +180,9 @@
 			dependencies = (
 			);
 			name = LunchAndLearn;
+			packageProductDependencies = (
+				82077C5D27A44D3000DBA57F /* SwiftUIPreviewHelpers */,
+			);
 			productName = LunchAndLearn;
 			productReference = 82077C2427A44B2800DBA57F /* LunchAndLearn.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +255,9 @@
 				Base,
 			);
 			mainGroup = 82077C1B27A44B2800DBA57F;
+			packageReferences = (
+				82077C5C27A44D3000DBA57F /* XCRemoteSwiftPackageReference "SwiftUIPreviewHelpers" */,
+			);
 			productRefGroup = 82077C2527A44B2800DBA57F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +301,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82077C2C27A44B2800DBA57F /* ViewController.swift in Sources */,
+				82077C5B27A44CA800DBA57F /* CounterViewController.swift in Sources */,
 				82077C2827A44B2800DBA57F /* AppDelegate.swift in Sources */,
 				82077C2A27A44B2800DBA57F /* SceneDelegate.swift in Sources */,
+				82077C6027A44F1C00DBA57F /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,6 +662,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		82077C5C27A44D3000DBA57F /* XCRemoteSwiftPackageReference "SwiftUIPreviewHelpers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aj-bartocci/SwiftUIPreviewHelpers";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		82077C5D27A44D3000DBA57F /* SwiftUIPreviewHelpers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82077C5C27A44D3000DBA57F /* XCRemoteSwiftPackageReference "SwiftUIPreviewHelpers" */;
+			productName = SwiftUIPreviewHelpers;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 82077C1C27A44B2800DBA57F /* Project object */;
 }
